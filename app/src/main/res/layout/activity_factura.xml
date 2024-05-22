@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Factura">
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="110dp"
+        android:text="Facturación"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvapellido"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvnombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="12dp"
+        android:text="Nombre: "
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvapellido"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvcomida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Comida: "
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/tvcedula"
+        app:layout_constraintTop_toBottomOf="@+id/tvcedula" />
+
+    <TextView
+        android:id="@+id/tvcedula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:text="Cédula: "
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/tvapellido"
+        app:layout_constraintTop_toBottomOf="@+id/tvapellido" />
+
+    <TextView
+        android:id="@+id/tvapellido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="99dp"
+        android:text="Apellido: "
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvdetalle"
+        app:layout_constraintStart_toStartOf="@+id/tvnombre"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="15dp"
+        android:text="Hacer el pago en la caja al retirar la comida"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/btnsalir"
+        app:layout_constraintStart_toStartOf="@+id/tvtotal"
+        app:layout_constraintTop_toBottomOf="@+id/tvreferencia" />
+
+    <TextView
+        android:id="@+id/tvreferencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="51dp"
+        android:layout_marginBottom="54dp"
+        android:text="Referencia: "
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView19"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvdetalle" />
+
+    <TextView
+        android:id="@+id/tvtotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Total: "
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/tvreferencia"
+        app:layout_constraintTop_toBottomOf="@+id/tvreferencia" />
+
+    <Button
+        android:id="@+id/btnsalir"
+        android:layout_width="190dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="16dp"
+        android:text="Salir"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+    <TextView
+        android:id="@+id/tvdetalle"
+        android:layout_width="296dp"
+        android:layout_height="191dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="44dp"
+        android:text="placeholder"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvreferencia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvapellido" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
